@@ -118,6 +118,7 @@ body {
     padding: 19px 63px 19px 21px;
     max-width: 208px;
     width: 100%;
+    z-index: -1;
 }
 
 .btn-img{
@@ -126,6 +127,10 @@ body {
     width: 100%;
     box-sizing: border-box;
     color: #173753;
+    position: relative;
+    z-index: 1;
+    left: -65px;
+    top: 3px;
 
 }
 
@@ -177,6 +182,7 @@ body {
     display: flex;
     /*justify-content: space-between;*/
     position: absolute;
+    
 }
 
 .steps-text-content{
@@ -215,6 +221,7 @@ body {
     max-width: 1140px;
     max-height: 540px;
     width: 100%;
+    margin-top: 82px;
     background-color: #F4F5F6;;
     border-radius: 50px;
 
