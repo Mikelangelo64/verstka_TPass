@@ -162,27 +162,21 @@ body {
     min-height: 409px;
 }
 
-.steps-img{
-    position: relative;
-    padding-top: 100px;
-    display: flex;
-    /*justify-content: space-between;*/
-    align-items: flex-start;
+.steps-content{
+    margin-top: 100px;
+    display: flex
+}
 
+.steps-element{
+    max-width: 325px;
+    width: 100%;
+    margin-right: 52px;
 }
 
 .steps-img-content{
     min-height: 105px;
     width: auto;
-    margin-right: 272px;
     margin-bottom: 29px;
-}
-
-.steps-text{
-    display: flex;
-    /*justify-content: space-between;*/
-    position: absolute;
-    
 }
 
 .steps-text-content{
@@ -194,10 +188,6 @@ body {
     
     letter-spacing: 0.2px;
     color: #0F2336;
-
-    width: 325px;
-    height: 114px;
-    margin-right: 60px;
 }
 
 .steps-span{
@@ -206,9 +196,8 @@ body {
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    color: #576D81;
-
-    
+    color: #576D81; 
+    margin-top: 12px; 
 }
 
 .sections-content{
@@ -217,24 +206,20 @@ body {
 }
 
 .section-phone-container{
-    position: relative;
     max-width: 1140px;
-    max-height: 540px;
+    height: 540px;
     width: 100%;
     margin-top: 82px;
-    background-color: #F4F5F6;;
+    background-color: #F4F5F6;
     border-radius: 50px;
-
-    /*display: flex;*/
+    display: flex;
     align-items: center;
 }
 
 .phone-text{
-    position: absolute;
     max-width: 420px;
-    right: 7%;
-    top: 25%;
-    
+    right: 0;
+    /* top: 25%; */
     z-index: 1;
     
 }
@@ -246,9 +231,6 @@ body {
     font-size: 18px;
     line-height: 18px;
     margin-bottom: 22px;
-    /* identical to box height, or 100% */
-
-
     color: #576D81;
 }
 
@@ -265,37 +247,36 @@ body {
 }
 
 .phone-img{
-   /* position: absolute;*/
-    max-width: 580px;
-    width: 100%;
+    position: relative;
+    width: 580px;
+    /* width: 100%; */
     margin: 0;
-
-    z-index: -1;
+    z-index: 1;
 }
 
 .phone-img-content-1{
     width: 321px;
     height: 640px;
-    position: relative;
-    top: -50px;
+    position: absolute;
+    top: -325px;
     left: 25%;
-    z-index: 1
+    z-index: 1;
 }
 
 .phone-img-content-2{
     width: 223px;
     height: 117px;
-    position: relative;
-    top: -40px;
-    left: 60px;
-    z-index: 2
+    position: absolute;
+    top: 205px;
+    left: 65%;
+    z-index: 2;
 }
 
 .phone-img-content-3{
     width: 187px;
     height: 361px;
-    z-index: 0;
+    /* z-index: 0; */
     left: 25px;
-    top: -540px;
-    position: relative;
+    top: -140px;
+    position: absolute;
 }
