@@ -34,6 +34,8 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 50px;
+    position: relative;
+    z-index: 1
 }
 
 .logo img{
@@ -106,7 +108,6 @@ body {
 }
 
 .header-title-btn{
-    /*position: relative;*/
     background: #00CCCC;
     border: 1px solid #00CCCC;
     box-sizing: border-box;
@@ -114,11 +115,13 @@ body {
     font-size: 18px;
     line-height: 22px;
     color: #0F2336;
-    box-shadow: 0px 3px 18px rgba(0, 201, 201, 0.55);
-    padding: 19px 63px 19px 21px;
+    box-shadow: 0px 3px 18px rgb(0 201 201 / 55%);
+    padding: 19px;
     max-width: 208px;
     width: 100%;
     z-index: -1;
+    display: flex;
+    text-align: center;
 }
 
 .btn-img{
@@ -204,7 +207,8 @@ body {
 }
 
 .sections-content{
-    height: 3159px;
+    max-height: 3159px;
+    height: 100%;
     background-color: #fff;
 }
 
@@ -218,6 +222,7 @@ body {
     border-radius: 50px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
 }
 
@@ -231,10 +236,11 @@ body {
 
 .phone-text-2{
     max-width: 420px;
+    width: 100%;
+    left: -150px;
     /* top: 25%; */
-    z-index: 1;
-    left: 140px;
-    position: relative;
+    /* z-index: 1; */
+    position: relative
     
 }
 
@@ -285,15 +291,15 @@ body {
 
 .phone-img{
     position: relative;
-    width: 580px;
-    /* width: 100%; */
+    max-width: 580px;
+    width: 100%;
     margin: 0;
     z-index: 1;
 }
 
 .phone-img-content-1{
-    width: 321px;
-    height: 640px;
+    max-width: 321px;
+    max-height: 640px;
     position: absolute;
     top: -325px;
     left: 25%;
@@ -301,8 +307,9 @@ body {
 }
 
 .phone-img-content-2{
-    width: 223px;
-    height: 117px;
+    max-width: 223px;
+    max-height: 117px;
+    width: 100%;
     position: absolute;
     top: 205px;
     left: 65%;
@@ -310,8 +317,9 @@ body {
 }
 
 .phone-img-content-3{
-    width: 187px;
-    height: 361px;
+    max-width: 187px;
+    max-height: 361px;
+    width: 100%;
     /* z-index: 0; */
     left: 25px;
     top: -140px;
@@ -320,16 +328,18 @@ body {
 
 .phone-img-2{
     position: relative;
-    right: 0;
-    /*width: 580px;*/
+    /*right: 0;*/
+    max-width: 580px;
     width: 100%;
     margin: 0;
     z-index: 1;
 }
 
 .phone-2-img-content-1{
-    width: 321px;
-    height: 640px;
+    max-width: 321px;
+    width: 100%;
+    
+    max-height: 640px;
     position: absolute;
     top: -325px;
     /* left: 25%; */
@@ -338,8 +348,10 @@ body {
 }
 
 .phone-2-img-content-2{
-    width: 163px;
-    height: 115px;
+    max-width: 163px;
+    max-height: 115px;
+    width: 100%;
+    
     position: absolute;
     bottom: -320px;
     right: 380px;
@@ -347,41 +359,48 @@ body {
 }
 
 .phone-2-img-content-3{
-    width: 178px;
-    height: 384px;
+    max-width: 178px;
+    max-height: 384px;
+    width: 100%;
+    
     /* z-index: 0; */
     right: 0;
     top: -140px;
     position: absolute;
 }
 
+.section-adventages{
+    background-color: #F4F5F6;
+    margin-bottom: 180px;
+}
+
 .adventages-container{
     min-height: 527px;
     width: 100%;
-    background-color: #F4F5F6;
+    
     display: flex;
     position: relative;
-    margin-bottom: 180px;
+    
+    padding: 10px;
     
 }
 
 .adventages-info{
-    width: 675px;
+    max-width: 505px;
+    width: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .adventages-item-text{
     max-width: 326px;
-    margin-top: 38px;
-
+    margin: 38px 0 43px 0;
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
     line-height: 25px;
-    /* identical to box height, or 100% */
-
     letter-spacing: 0.2px;
-
     color: #0F2336;
 }
 
@@ -400,50 +419,55 @@ body {
 }
 
 .adventages-item-img{
-    height: 50px;
+    max-height: 50px;
+    height: 100%;
     margin: 25px;
 }
 
 .adventages-item-1{
     display: flex;
-    position: absolute;
-    width: 455px;
-    height: 179px;
-    /* width: 100%; */
+    /* position: absolute; */
+    max-width: 455px;
+    max-height: 179px;
+    width: 100%;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0px 8px 32px rgba(15, 35, 54, 0.06);
-
-    top: -40px;
-    left: 170px;
+    box-shadow: 0px 8px 32px rgb(15 35 54 / 6%);
+    
+    margin: -30px 0 30px 0;
+    
 }
 
 .adventages-item-2{
     display: flex;
-    position: absolute;
-    width: 455px;
-    height: 179px;
-    /* width: 100%; */
-    background-color:  #fff;
+    /* position: absolute; */
+    max-width: 455px;
+    max-height: 179px;
+    width: 100%;
+    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0px 8px 32px rgba(15, 35, 54, 0.06);
-
-    left: 210px;
-    top: 169px;
+    box-shadow: 0px 8px 32px rgb(15 35 54 / 6%);
+    margin: 0 0 30px 40px;
+    
 }
 
 .adventages-item-3{
     display: flex;
-    position: absolute;
-    width: 455px;
-    height: 179px;
-    /* width: 100%; */
-    background-color:  #fff;
+    
+    max-width: 455px;
+    max-height: 179px;
+    width: 100%;
+    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0px 8px 32px rgba(15, 35, 54, 0.06);
+    box-shadow: 0px 8px 32px rgb(15 35 54 / 6%);
+    margin: 0 0 -30px 0;
+    
+}
 
-    left: 170px;
-    bottom: -30px;
+.adventages-images{
+    position: relative;
+    max-width: 595px;
+    width: 100%;
 }
 
 .img-adventages{
@@ -459,6 +483,7 @@ body {
     max-width: 570px;
     width: 100%;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .contact-text{
@@ -533,14 +558,16 @@ body {
 }
 
 .btn-store{
-    padding: 15px 33px;
     max-width: 185px;
-    width: auto;
+    width: 100%;
+    height: 60px;
     background: #240C39;
-
-    /*border: 1px solid #00CCCC;*/
+    /* border: 1px solid #00CCCC; */
     box-sizing: border-box;
     border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -552,18 +579,18 @@ body {
 
 .footer-img-left{
     position: absolute;
-    max-width: 230px;
+    max-width: 172px;
     width: 100%;
-    /* max-height: 296px; */
+    /* max-height: 336px; */
     /* height: 100%; */
     left: 0;
-    bottom: 0;
+    bottom: 24px;
 }
 
 .footer-img-right{
     right: 0;
     bottom: 0;
-    max-width: 188px;
+    max-width: 155px;
     width: 100%;
     position: absolute;
 }
